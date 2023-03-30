@@ -1,0 +1,133 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Answer;
+use Illuminate\Database\Seeder;
+
+class AnswersSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $answers = [
+            ['text_answer' => 'Отсутствует'],
+            ['text_answer' => 'Среднее образование - 9 классов'],
+            ['text_answer' => 'Среднее образование - 11 классов'],
+            ['text_answer' => 'Среднее профессиональное (колледж)'],
+            ['text_answer' => 'Да'],
+            ['text_answer' => 'Нет'],
+            ['text_answer' => 'Естественнонаучное'],
+            ['text_answer' => 'Гуманитарное'],
+            ['text_answer' => 'Искусство и творчество'],
+            ['text_answer' => 'Техническое'],
+            ['text_answer' => 'Спорт'],
+            ['text_answer' => 'Кино'],
+            ['text_answer' => 'Музыка'],
+            ['text_answer' => 'Театр'],
+            ['text_answer' => 'Живопись'],
+            ['text_answer' => 'Косвенно'],
+            ['text_answer' => 'Прямо'],
+            ['text_answer' => 'Гуманитарные'],
+            ['text_answer' => 'Естественные'],
+            ['text_answer' => 'Оба направления интересны'],
+            ['text_answer' => 'Язык и литература'],
+            ['text_answer' => 'История'],
+            ['text_answer' => 'Искусство'],
+            ['text_answer' => 'Математика'],
+            ['text_answer' => 'Физика'],
+            ['text_answer' => 'Химия'],
+            ['text_answer' => 'Английский'],
+            ['text_answer' => 'Французский'],
+            ['text_answer' => 'Немецкий'],
+            ['text_answer' => 'Русский'],
+            ['text_answer' => 'Украинский'],
+            ['text_answer' => 'Древний мир'],
+            ['text_answer' => 'Средневековье'],
+            ['text_answer' => 'Новое время'],
+            ['text_answer' => 'Алгебра'],
+            ['text_answer' => 'Геометрия'],
+            ['text_answer' => 'Статистика'],
+            ['text_answer' => 'Теория вероятности'],
+            ['text_answer' => 'Механика'],
+            ['text_answer' => 'Термодинамика'],
+            ['text_answer' => 'Квантовая физика'],
+            ['text_answer' => 'Органическая'],
+            ['text_answer' => 'Неорганическая'],
+            ['text_answer' => 'Физическая'],
+            ['text_answer' => 'Языки и литература'],
+            ['text_answer' => 'История и социальные науки'],
+            ['text_answer' => 'Искусство и гуманитарные науки'],
+            ['text_answer' => 'Биология и экология'],
+            ['text_answer' => 'Химия и математика'],
+            ['text_answer' => 'Физика и астрономия'],
+            ['text_answer' => 'Технологии и инженерные науки'],
+            ['text_answer' => 'Бизнес и управление'],
+            ['text_answer' => 'Право и криминалистика'],
+            ['text_answer' => 'Социальные науки'],
+            ['text_answer' => 'Образование и педагогика'],
+            ['text_answer' => 'Искусство и дизайн'],
+            ['text_answer' => 'Инженерия'],
+            ['text_answer' => 'Медицина и здравоохранение'],
+            ['text_answer' => 'ИТ'],
+            ['text_answer' => 'В офисе'],
+            ['text_answer' => 'На производстве'],
+            ['text_answer' => 'Все равно'],
+            ['text_answer' => 'Командные игры'],
+            ['text_answer' => 'Индивидуальные игры'],
+            ['text_answer' => 'Экстремальные виды спорта'],
+            ['text_answer' => 'Все виды спорта интересны'],
+            ['text_answer' => 'Интеллектуальная собственность'],
+            ['text_answer' => 'Гражданское право'],
+            ['text_answer' => 'Трудовое право'],
+            ['text_answer' => 'Уголовное право'],
+            ['text_answer' => 'Международное право'],
+            ['text_answer' => 'Налоговое право'],
+            ['text_answer' => 'Политика'],
+            ['text_answer' => 'Социология'],
+            ['text_answer' => 'Философия'],
+            ['text_answer' => 'Экономика'],
+            ['text_answer' => 'Психология'],
+            ['text_answer' => 'Матанализ'],
+            ['text_answer' => 'Дискретная математика'],
+            ['text_answer' => 'Фотография'],
+            ['text_answer' => 'Архитектура'],
+            ['text_answer' => 'Скульптура'],
+            ['text_answer' => 'Графический дизайн'],
+            ['text_answer' => 'Дошкольники'],
+            ['text_answer' => 'Младшие школьники'],
+            ['text_answer' => 'Старшие школьники'],
+            ['text_answer' => 'Студенты'],
+            ['text_answer' => 'Взрослые'],
+            ['text_answer' => 'Архитектура и строительство'],
+            ['text_answer' => 'Электротехника и электроника'],
+            ['text_answer' => 'Машиностроение и механика'],
+            ['text_answer' => 'Химическая технология и материаловедение'],
+            ['text_answer' => 'Информационные технологии и программирование'],
+            ['text_answer' => 'Управление медицинским учреждением'],
+            ['text_answer' => 'Медицинский реабилитолог'],
+            ['text_answer' => 'Сестринское дело'],
+            ['text_answer' => 'Врач-специалист'],
+            ['text_answer' => 'Врач общей практики'],
+            ['text_answer' => 'Программирование'],
+            ['text_answer' => 'БД'],
+            ['text_answer' => 'Сетевые технологии'],
+            ['text_answer' => 'ИИ'],
+            ['text_answer' => 'Машинное обучение'],
+            ['text_answer' => 'Интернет-вещей'],
+            ['text_answer' => 'Кибербезопасность'],
+            ['text_answer' => 'Веб-разработка'],
+            ['text_answer' => 'Разработка мобильных приложений'],
+            ['text_answer' => 'Облачные технологии'],
+            ['text_answer' => 'Науки и математика']
+        ];
+        foreach ($answers as $answer)
+            Answer::create([
+                'text_answer' => $answer['text_answer']
+            ]);
+    }
+}

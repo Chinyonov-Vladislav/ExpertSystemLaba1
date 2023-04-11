@@ -1,6 +1,6 @@
 <template>
     <fragment>
-        <footer class="bg-dark text-center text-white fixed-bottom">
+        <footer class="bg-dark text-center text-white sticky-footer">
             <!-- Copyright -->
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
                 {{currentDate.getFullYear()}}

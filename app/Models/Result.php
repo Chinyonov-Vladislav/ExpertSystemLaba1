@@ -11,8 +11,8 @@ class Result extends Model
     protected $table = 'results';
     protected $fillable = ['text_result'];
 
-    public function results()
+    public function machineOutputs()
     {
-        return $this->hasMany(Result::class);
+        return $this->hasMany(MachineOutput::class);
     }
 }

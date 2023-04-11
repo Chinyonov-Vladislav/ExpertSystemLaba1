@@ -5,7 +5,10 @@
     "/index.php": "/index.php",
     "/js/page.js": "/js/page.js",
     "/mix-manifest.json": "/mix-manifest.json",
+    "/photos/error.png": "/photos/error.png",
     "/photos/main.jpg": "/photos/main.jpg",
+    "/photos/main.png": "/photos/main.png",
+    "/photos/main1.jpg": "/photos/main1.jpg",
     "/photos/photo.png": "/photos/photo.png",
     "/robots.txt": "/robots.txt",
     "/web.config": "/web.config"

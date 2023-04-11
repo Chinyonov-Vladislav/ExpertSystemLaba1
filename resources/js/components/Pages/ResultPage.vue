@@ -1,10 +1,11 @@
 <template>
     <fragment>
-        <main-header :flag=flag_start></main-header>
-        <main class="container">
+        <main-header :flag=3></main-header>
+        <main class="container flex-fill">
             <section class="py-5 text-center container">
                 <div class="row py-lg-5">
                     <div class="col-lg-6 col-md-8 mx-auto">
+                        <img src="/photos/photo.png" class="img-fluid" alt="Responsive image">
                         <p class="lead text-muted">Результат работы экспертной системы</p>
                         <p class="lead text-muted">{{ result }}</p>
                         <div>

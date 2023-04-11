@@ -6,6 +6,5 @@
 @section('content')
     <result-page
         :text_help='{!! json_encode($text_help) !!}'
-        :text_result='{!! json_encode($text_result) !!}'
-        :flag_start = false></result-page>
+        :text_result='{!! json_encode($text_result) !!}'></result-page>
 @endsection

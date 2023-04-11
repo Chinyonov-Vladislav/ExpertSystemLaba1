@@ -11,8 +11,8 @@ class Question extends Model
     protected $table = 'questions';
     protected $fillable = ['text_question'];
 
-    public function questions()
+    public function machineOutputs()
     {
-        return $this->hasMany(Question::class);
+        return $this->hasMany(MachineOutput::class);
     }
 }

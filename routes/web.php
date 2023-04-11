@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\ErrorController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\ResultController;
+use App\Http\Controllers\ShowingGraphController;
 use App\Http\Controllers\StartController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -31,4 +33,5 @@ Route::get('/', [MainController::class, 'index'])->name('main');
 Route::get("/start", [StartController::class,'index'])->name("startIndex");
 Route::get("/result/{id}", [ResultController::class,'index'])->name("resultIndex");
 Route::post("/get_next_question",[QuestionController::class, 'index'])->name('next');
-
+Route::get("/show_graph", [ShowingGraphController::class, 'showGraph'])->name('showGraph');
+Route::get("/error/{message}", [ErrorController::class, 'index'])->name('errorIndex');

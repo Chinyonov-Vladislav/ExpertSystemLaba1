@@ -11,8 +11,8 @@ class Answer extends Model
     protected $table = 'answers';
     protected $fillable = ['text_answer'];
 
-    public function answers()
+    public function machineOutputs()
     {
-        return $this->hasMany(Answer::class);
+        return $this->hasMany(MachineOutput::class);
     }
 }

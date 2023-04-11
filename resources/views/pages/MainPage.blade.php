@@ -4,5 +4,5 @@
 @endsection
 
 @section('content')
-    <main-page :flag_start = true></main-page>
+    <main-page></main-page>
 @endsection

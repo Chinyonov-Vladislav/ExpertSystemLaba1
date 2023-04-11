@@ -9,6 +9,8 @@ require('./bootstrap');
 window.Vue = require('vue').default;
 import Fragment from 'vue-fragment'
 Vue.use(Fragment.Plugin)
+import VueTree from '@ssthouse/vue-tree-chart'
+Vue.component('vue-tree', VueTree)
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -26,10 +28,14 @@ Vue.component('main-header',require("./components/LayoutComponents/header").defa
 Vue.component('main-footer',require("./components/LayoutComponents/footer").default)
 Vue.component("question",require("./components/LayoutComponents/QuestionComponent").default)
 Vue.component('modal',require("./components/LayoutComponents/modal").default)
+Vue.component("error-component",require("./components/LayoutComponents/ErrorComponent").default)
 //Страницы
 Vue.component("main-page",require("./components/Pages/MainPage").default)
 Vue.component("question-page",require("./components/Pages/QuestionPage").default)
 Vue.component("result-page",require("./components/Pages/ResultPage").default)
+Vue.component("show-graph-page",require("./components/Pages/ShowingGraphPage").default)
+Vue.component("error-page",require("./components/Pages/ErrorPage").default)
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

@@ -11,8 +11,8 @@ class Help extends Model
     protected $table = 'helps';
     protected $fillable = ['text_help'];
 
-    public function helps()
+    public function machineOutputs()
     {
-        return $this->hasMany(Help::class);
+        return $this->hasMany(MachineOutput::class);
     }
 }

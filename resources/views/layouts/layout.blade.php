@@ -18,7 +18,7 @@
 </head>
 <body>
 <!-- для отображения и работы vue-компоненты нужно помещать в div id = "app" -->
-<div id="app">
+<div id="app" class="d-flex flex-column min-vh-100">
     @yield('content')
 </div>
 </body>

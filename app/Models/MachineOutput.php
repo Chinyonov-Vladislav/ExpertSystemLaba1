@@ -11,20 +11,20 @@ class MachineOutput extends Model
     protected $table = 'machine_outputs';
     protected $fillable = ['id_question','id_answer','id_help','id_result','id_next_question'];
 
-    public function questions()
+    public function question()
     {
-        return $this->belongsToMany(Question::class);
+        return $this->belongsTo(Question::class);
     }
-    public function answers()
+    public function answer()
     {
-        return $this->belongsToMany(Answer::class);
+        return $this->belongsTo(Answer::class);
     }
-    public function helps()
+    public function help()
     {
-        return $this->belongsToMany(Help::class);
+        return $this->belongsTo(Help::class);
     }
-    public function results()
+    public function result()
     {
-        return $this->belongsToMany(Result::class);
+        return $this->belongsTo(Result::class);
     }
 }

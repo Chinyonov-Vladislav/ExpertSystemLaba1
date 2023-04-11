@@ -1,6 +1,6 @@
 <template>
     <fragment>
-        <main class="container">
+        <main class="container flex-fill">
             <section class="py-5 text-center container">
                 <div class="row py-lg-5">
                     <div class="col-lg-6 col-md-8 mx-auto">
@@ -45,7 +45,7 @@ export default {
     created() {
         //первый вопрос
         if (this.help === null) {
-            this.text_help = "Основной критерий, который будет влиять на подбор зал в интернет –кафе – это цель визита посетителя. Вам предложено на выбор один из трёх видов: выпить кофе, работа за компьютером, перекус. От вашего выбора будет зависеть результирующий ответ экспертной системы.";
+            this.text_help = "Добро пожаловать в экспертную систему по подбору специальности в вузе. На каждом этапе вам будет задан вопрос с возможными вариантами ответа. Вам необходимо выбрать один вариант ответа и нажать \"Далее\". После серии вопросов экспертная система выдаст рекомендацию по специальностям, которые могут вам подойти при поступлении в ВУЗ. Сначала ответьте на текущий вопрос: \""+this.question.text_question+"\"";
             this.id_question = this.question.id;
             this.text_question = this.question.text_question;
             this.answers_on_question = this.answers;

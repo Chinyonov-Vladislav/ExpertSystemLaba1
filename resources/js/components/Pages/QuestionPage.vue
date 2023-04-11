@@ -1,6 +1,6 @@
 <template>
     <fragment>
-        <main-header  :flag = flag_start></main-header>
+        <main-header  :flag = 2></main-header>
         <question-component
             :question="question"
             :answers="answers_on_question"></question-component>
@@ -16,8 +16,7 @@ export default {
     components: {QuestionComponent},
     props: {
         question: {default: null},
-        answers_on_question: {default:null},
-        flag_start:{default:null}
+        answers_on_question: {default:null}
     },
     data() {
         return {
